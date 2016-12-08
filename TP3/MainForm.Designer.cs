@@ -60,13 +60,13 @@
             this.modifyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.monumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajouterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.réservationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rechercherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rechercheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BTN_EspaceClient = new System.Windows.Forms.Button();
-            this.ajouterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.GB_MonumentImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_MonumentImage)).BeginInit();
@@ -78,6 +78,9 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NumeroCircuit,
@@ -88,7 +91,7 @@
             this.DuréeCircuit,
             this.NombreMaximaleClientCircuit,
             this.CoteCircuit});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 139);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(780, 170);
@@ -122,7 +125,7 @@
             this.VilleArrivéCircuit.HeaderText = "VilleArrivé";
             this.VilleArrivéCircuit.Name = "VilleArrivéCircuit";
             this.VilleArrivéCircuit.ReadOnly = true;
-            this.VilleArrivéCircuit.Width = 76;
+            this.VilleArrivéCircuit.Width = 78;
             // 
             // prixCircuit
             // 
@@ -157,7 +160,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label1.Location = new System.Drawing.Point(17, 119);
+            this.label1.Location = new System.Drawing.Point(17, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 17);
             this.label1.TabIndex = 6;
@@ -167,7 +170,7 @@
             // 
             this.GB_MonumentImage.Controls.Add(this.PB_MonumentImage);
             this.GB_MonumentImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.GB_MonumentImage.Location = new System.Drawing.Point(146, 337);
+            this.GB_MonumentImage.Location = new System.Drawing.Point(141, 249);
             this.GB_MonumentImage.Name = "GB_MonumentImage";
             this.GB_MonumentImage.Size = new System.Drawing.Size(155, 134);
             this.GB_MonumentImage.TabIndex = 2;
@@ -176,7 +179,8 @@
             // 
             // PB_MonumentImage
             // 
-            this.PB_MonumentImage.Location = new System.Drawing.Point(12, 12);
+            this.PB_MonumentImage.BackColor = System.Drawing.Color.SkyBlue;
+            this.PB_MonumentImage.Location = new System.Drawing.Point(6, 19);
             this.PB_MonumentImage.Name = "PB_MonumentImage";
             this.PB_MonumentImage.Size = new System.Drawing.Size(143, 109);
             this.PB_MonumentImage.TabIndex = 9;
@@ -185,7 +189,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(643, 312);
+            this.label2.Location = new System.Drawing.Point(641, 233);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 13);
             this.label2.TabIndex = 12;
@@ -194,7 +198,7 @@
             // LBL_NombredeMonuments
             // 
             this.LBL_NombredeMonuments.AutoSize = true;
-            this.LBL_NombredeMonuments.Location = new System.Drawing.Point(768, 312);
+            this.LBL_NombredeMonuments.Location = new System.Drawing.Point(766, 233);
             this.LBL_NombredeMonuments.Name = "LBL_NombredeMonuments";
             this.LBL_NombredeMonuments.Size = new System.Drawing.Size(24, 13);
             this.LBL_NombredeMonuments.TabIndex = 13;
@@ -202,35 +206,43 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(140, 477);
+            this.button1.BackColor = System.Drawing.Color.LightBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(140, 389);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 14;
             this.button1.Text = "Précédent";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(221, 477);
+            this.button2.BackColor = System.Drawing.Color.LightBlue;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(221, 389);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 15;
             this.button2.Text = "Suivant";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // LB_Monuments
             // 
+            this.LB_Monuments.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.LB_Monuments.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.LB_Monuments.FormattingEnabled = true;
-            this.LB_Monuments.Location = new System.Drawing.Point(12, 337);
+            this.LB_Monuments.Location = new System.Drawing.Point(12, 249);
             this.LB_Monuments.Name = "LB_Monuments";
-            this.LB_Monuments.Size = new System.Drawing.Size(120, 147);
+            this.LB_Monuments.Size = new System.Drawing.Size(120, 169);
             this.LB_Monuments.TabIndex = 16;
             this.LB_Monuments.SelectedIndexChanged += new System.EventHandler(this.LB_Monuments_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 312);
+            this.label3.Location = new System.Drawing.Point(12, 233);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
             this.label3.TabIndex = 17;
@@ -271,6 +283,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.circuitToolStripMenuItem,
             this.monumentsToolStripMenuItem,
@@ -294,25 +307,28 @@
             // 
             // addToolStripMenuItem1
             // 
+            this.addToolStripMenuItem1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.addToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("addToolStripMenuItem1.Image")));
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.addToolStripMenuItem1.Text = "Add";
             this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
             // 
             // modifyToolStripMenuItem1
             // 
+            this.modifyToolStripMenuItem1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.modifyToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("modifyToolStripMenuItem1.Image")));
             this.modifyToolStripMenuItem1.Name = "modifyToolStripMenuItem1";
-            this.modifyToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.modifyToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.modifyToolStripMenuItem1.Text = "Modify";
             this.modifyToolStripMenuItem1.Click += new System.EventHandler(this.modifyToolStripMenuItem1_Click);
             // 
             // deleteToolStripMenuItem1
             // 
+            this.deleteToolStripMenuItem1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.deleteToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem1.Image")));
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.deleteToolStripMenuItem1.Text = "Delete";
             // 
             // monumentsToolStripMenuItem
@@ -324,8 +340,18 @@
             this.monumentsToolStripMenuItem.Text = "Monuments";
             this.monumentsToolStripMenuItem.Click += new System.EventHandler(this.monumentsToolStripMenuItem_Click);
             // 
+            // ajouterToolStripMenuItem1
+            // 
+            this.ajouterToolStripMenuItem1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ajouterToolStripMenuItem1.Image = global::TP3.Properties.Resources.add;
+            this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.ajouterToolStripMenuItem1.Text = "Ajouter";
+            this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajouterToolStripMenuItem1_Click);
+            // 
             // réservationToolStripMenuItem
             // 
+            this.réservationToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.réservationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajouterToolStripMenuItem,
             this.supprimerToolStripMenuItem});
@@ -335,17 +361,19 @@
             // 
             // ajouterToolStripMenuItem
             // 
+            this.ajouterToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ajouterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ajouterToolStripMenuItem.Image")));
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
             // 
             // supprimerToolStripMenuItem
             // 
+            this.supprimerToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.supprimerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("supprimerToolStripMenuItem.Image")));
             this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
-            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.supprimerToolStripMenuItem.Text = "Supprimer";
             // 
             // rechercherToolStripMenuItem
@@ -358,19 +386,22 @@
             // 
             // rechercheToolStripMenuItem
             // 
+            this.rechercheToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.rechercheToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("rechercheToolStripMenuItem.Image")));
             this.rechercheToolStripMenuItem.Name = "rechercheToolStripMenuItem";
-            this.rechercheToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.rechercheToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.rechercheToolStripMenuItem.Text = "Recherche";
             this.rechercheToolStripMenuItem.Click += new System.EventHandler(this.rechercheToolStripMenuItem_Click);
             // 
             // BTN_EspaceClient
             // 
-            this.BTN_EspaceClient.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.BTN_EspaceClient.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BTN_EspaceClient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN_EspaceClient.FlatAppearance.BorderSize = 0;
+            this.BTN_EspaceClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_EspaceClient.Image = global::TP3.Properties.Resources._Customers;
             this.BTN_EspaceClient.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BTN_EspaceClient.Location = new System.Drawing.Point(646, 340);
+            this.BTN_EspaceClient.Location = new System.Drawing.Point(644, 261);
             this.BTN_EspaceClient.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.BTN_EspaceClient.Name = "BTN_EspaceClient";
             this.BTN_EspaceClient.Size = new System.Drawing.Size(150, 144);
@@ -381,20 +412,12 @@
             this.BTN_EspaceClient.UseVisualStyleBackColor = false;
             this.BTN_EspaceClient.Click += new System.EventHandler(this.BTN_EspaceClient_Click);
             // 
-            // ajouterToolStripMenuItem1
-            // 
-            this.ajouterToolStripMenuItem1.Image = global::TP3.Properties.Resources.add;
-            this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.ajouterToolStripMenuItem1.Text = "Ajouter";
-            this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajouterToolStripMenuItem1_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(808, 572);
+            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.ClientSize = new System.Drawing.Size(808, 429);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.BTN_EspaceClient);
             this.Controls.Add(this.label3);

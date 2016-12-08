@@ -61,39 +61,50 @@
             // 
             // textUser
             // 
-            this.textUser.BackColor = System.Drawing.Color.LightGreen;
-            this.textUser.Location = new System.Drawing.Point(72, 19);
+            this.textUser.BackColor = System.Drawing.Color.Khaki;
+            this.textUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.textUser.Location = new System.Drawing.Point(70, 24);
             this.textUser.Name = "textUser";
-            this.textUser.Size = new System.Drawing.Size(100, 20);
+            this.textUser.Size = new System.Drawing.Size(100, 13);
             this.textUser.TabIndex = 1;
             this.textUser.Text = "aboulkhi";
             // 
             // BTN_Connexion
             // 
+            this.BTN_Connexion.BackColor = System.Drawing.Color.LightBlue;
+            this.BTN_Connexion.FlatAppearance.BorderSize = 0;
+            this.BTN_Connexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Connexion.Location = new System.Drawing.Point(97, 83);
             this.BTN_Connexion.Name = "BTN_Connexion";
             this.BTN_Connexion.Size = new System.Drawing.Size(75, 23);
             this.BTN_Connexion.TabIndex = 2;
             this.BTN_Connexion.Text = "Connexion";
-            this.BTN_Connexion.UseVisualStyleBackColor = true;
+            this.BTN_Connexion.UseVisualStyleBackColor = false;
             this.BTN_Connexion.Click += new System.EventHandler(this.BTN_Connexion_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.LightBlue;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(12, 83);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(79, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Deconnexion";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Text = "Quitter";
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textPassword
             // 
-            this.textPassword.BackColor = System.Drawing.Color.LightGreen;
-            this.textPassword.Location = new System.Drawing.Point(72, 46);
+            this.textPassword.BackColor = System.Drawing.Color.Khaki;
+            this.textPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.textPassword.Location = new System.Drawing.Point(70, 49);
             this.textPassword.Name = "textPassword";
-            this.textPassword.Size = new System.Drawing.Size(100, 20);
+            this.textPassword.PasswordChar = '*';
+            this.textPassword.Size = new System.Drawing.Size(100, 14);
             this.textPassword.TabIndex = 1;
             this.textPassword.Text = "ORACLE1";
             // 
@@ -126,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(396, 262);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);

@@ -90,12 +90,6 @@
     <Compile Include="CreationCircuit.Designer.cs">
       <DependentUpon>CreationCircuit.cs</DependentUpon>
     </Compile>
-    <Compile Include="EspaceClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EspaceClient.Designer.cs">
-      <DependentUpon>EspaceClient.cs</DependentUpon>
-    </Compile>
     <Compile Include="Monument.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,9 +118,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreationCircuit.resx">
       <DependentUpon>CreationCircuit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EspaceClient.resx">
-      <DependentUpon>EspaceClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Monument.resx">
       <DependentUpon>Monument.cs</DependentUpon>

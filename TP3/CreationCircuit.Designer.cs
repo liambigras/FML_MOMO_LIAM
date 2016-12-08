@@ -55,7 +55,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Khaki;
+            this.textBox1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBox1.Location = new System.Drawing.Point(7, 112);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(43, 20);
@@ -73,7 +73,7 @@
             // 
             // TXTBOX_VArriver
             // 
-            this.TXTBOX_VArriver.BackColor = System.Drawing.Color.Khaki;
+            this.TXTBOX_VArriver.BackColor = System.Drawing.Color.LightSkyBlue;
             this.TXTBOX_VArriver.Location = new System.Drawing.Point(123, 64);
             this.TXTBOX_VArriver.Name = "TXTBOX_VArriver";
             this.TXTBOX_VArriver.Size = new System.Drawing.Size(109, 20);
@@ -91,7 +91,7 @@
             // 
             // TXTBOX_VDepart
             // 
-            this.TXTBOX_VDepart.BackColor = System.Drawing.Color.Khaki;
+            this.TXTBOX_VDepart.BackColor = System.Drawing.Color.LightSkyBlue;
             this.TXTBOX_VDepart.Location = new System.Drawing.Point(6, 64);
             this.TXTBOX_VDepart.Name = "TXTBOX_VDepart";
             this.TXTBOX_VDepart.Size = new System.Drawing.Size(100, 20);
@@ -109,7 +109,7 @@
             // 
             // TXTBOX_CircuitNom
             // 
-            this.TXTBOX_CircuitNom.BackColor = System.Drawing.Color.Khaki;
+            this.TXTBOX_CircuitNom.BackColor = System.Drawing.Color.LightSkyBlue;
             this.TXTBOX_CircuitNom.Location = new System.Drawing.Point(84, 25);
             this.TXTBOX_CircuitNom.Name = "TXTBOX_CircuitNom";
             this.TXTBOX_CircuitNom.Size = new System.Drawing.Size(100, 20);
@@ -137,7 +137,7 @@
             // 
             // TXTBOX_Duree
             // 
-            this.TXTBOX_Duree.BackColor = System.Drawing.Color.Khaki;
+            this.TXTBOX_Duree.BackColor = System.Drawing.Color.LightSkyBlue;
             this.TXTBOX_Duree.Location = new System.Drawing.Point(89, 112);
             this.TXTBOX_Duree.Name = "TXTBOX_Duree";
             this.TXTBOX_Duree.Size = new System.Drawing.Size(60, 20);
@@ -155,7 +155,7 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.Khaki;
+            this.comboBox1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(170, 110);
             this.comboBox1.Name = "comboBox1";
@@ -184,7 +184,7 @@
             // 
             // comboBox3
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.Khaki;
+            this.comboBox3.BackColor = System.Drawing.Color.LightSkyBlue;
             this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(206, 23);
@@ -219,7 +219,7 @@
             // 
             // TXTBOX_CircuitNumber
             // 
-            this.TXTBOX_CircuitNumber.BackColor = System.Drawing.Color.Khaki;
+            this.TXTBOX_CircuitNumber.BackColor = System.Drawing.Color.LightSkyBlue;
             this.TXTBOX_CircuitNumber.Enabled = false;
             this.TXTBOX_CircuitNumber.Location = new System.Drawing.Point(7, 25);
             this.TXTBOX_CircuitNumber.Name = "TXTBOX_CircuitNumber";

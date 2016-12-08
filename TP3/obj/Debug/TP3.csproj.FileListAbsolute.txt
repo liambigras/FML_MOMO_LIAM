@@ -178,12 +178,11 @@ C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\bin\Debug\Oracle.ManagedDataAcc
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\bin\Debug\Xceed.Wpf.Toolkit.dll
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.csprojResolveAssemblyReference.cache
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.Connexion.resources
-C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.DLGrRECHERCHE.resources
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.MainForm.resources
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.ModifierCircuit.resources
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.Form_CreationCircuit.resources
-C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.EspaceClient.resources
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.Monument.resources
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.Properties.Resources.resources
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.ReservationClient.resources
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.csproj.GenerateResource.Cache
+C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.FormSearchMonument.resources

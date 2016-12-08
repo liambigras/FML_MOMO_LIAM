@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Monument));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,11 +39,12 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.BTN_OK = new System.Windows.Forms.Button();
-            this.BTN_Annuler = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.BTN_Annuler = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,6 +105,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBox1.Location = new System.Drawing.Point(92, 25);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(134, 20);
@@ -110,6 +113,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.LightSkyBlue;
             this.textBox3.Location = new System.Drawing.Point(92, 76);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(134, 20);
@@ -124,21 +128,16 @@
             // 
             // BTN_OK
             // 
-            this.BTN_OK.Location = new System.Drawing.Point(230, 312);
+            this.BTN_OK.BackColor = System.Drawing.Color.SteelBlue;
+            this.BTN_OK.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_OK.BackgroundImage")));
+            this.BTN_OK.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTN_OK.FlatAppearance.BorderSize = 0;
+            this.BTN_OK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_OK.Location = new System.Drawing.Point(249, 312);
             this.BTN_OK.Name = "BTN_OK";
-            this.BTN_OK.Size = new System.Drawing.Size(75, 23);
+            this.BTN_OK.Size = new System.Drawing.Size(56, 54);
             this.BTN_OK.TabIndex = 3;
-            this.BTN_OK.Text = "OK";
-            this.BTN_OK.UseVisualStyleBackColor = true;
-            // 
-            // BTN_Annuler
-            // 
-            this.BTN_Annuler.Location = new System.Drawing.Point(311, 312);
-            this.BTN_Annuler.Name = "BTN_Annuler";
-            this.BTN_Annuler.Size = new System.Drawing.Size(75, 23);
-            this.BTN_Annuler.TabIndex = 3;
-            this.BTN_Annuler.Text = "Annuler";
-            this.BTN_Annuler.UseVisualStyleBackColor = true;
+            this.BTN_OK.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -150,6 +149,7 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.SkyBlue;
             this.richTextBox1.Location = new System.Drawing.Point(3, 210);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(383, 96);
@@ -158,6 +158,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(92, 105);
             this.comboBox1.Name = "comboBox1";
@@ -166,23 +167,37 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(92, 132);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(134, 21);
             this.comboBox2.TabIndex = 6;
             // 
+            // BTN_Annuler
+            // 
+            this.BTN_Annuler.BackColor = System.Drawing.Color.SteelBlue;
+            this.BTN_Annuler.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_Annuler.BackgroundImage")));
+            this.BTN_Annuler.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTN_Annuler.FlatAppearance.BorderSize = 0;
+            this.BTN_Annuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Annuler.Location = new System.Drawing.Point(321, 312);
+            this.BTN_Annuler.Name = "BTN_Annuler";
+            this.BTN_Annuler.Size = new System.Drawing.Size(56, 54);
+            this.BTN_Annuler.TabIndex = 7;
+            this.BTN_Annuler.UseVisualStyleBackColor = false;
+            // 
             // Monument
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(398, 347);
+            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.ClientSize = new System.Drawing.Size(398, 384);
+            this.Controls.Add(this.BTN_Annuler);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.BTN_Annuler);
             this.Controls.Add(this.BTN_OK);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox3);
@@ -193,6 +208,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Monument";
             this.Text = "Monument";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -213,10 +229,11 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button BTN_OK;
-        private System.Windows.Forms.Button BTN_Annuler;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button BTN_Annuler;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

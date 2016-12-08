@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace TP3
 {
-    public partial class DLGrRECHERCHE : Form
+    public partial class FormSearchMonument : Form
     {
-        public DLGrRECHERCHE()
+        public FormSearchMonument()
         {
             InitializeComponent();
+        }
+
+        private void LV_CircuitsPositions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

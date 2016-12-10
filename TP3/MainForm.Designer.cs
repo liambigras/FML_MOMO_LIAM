@@ -73,11 +73,14 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.GB_MonumentImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_MonumentImage)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -305,7 +308,7 @@
             this.addToolStripMenuItem1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.addToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("addToolStripMenuItem1.Image")));
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
             this.addToolStripMenuItem1.Text = "Add";
             this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
             // 
@@ -314,7 +317,7 @@
             this.modifyToolStripMenuItem1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.modifyToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("modifyToolStripMenuItem1.Image")));
             this.modifyToolStripMenuItem1.Name = "modifyToolStripMenuItem1";
-            this.modifyToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.modifyToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
             this.modifyToolStripMenuItem1.Text = "Modify";
             this.modifyToolStripMenuItem1.Click += new System.EventHandler(this.modifyToolStripMenuItem1_Click);
             // 
@@ -323,7 +326,7 @@
             this.deleteToolStripMenuItem1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.deleteToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem1.Image")));
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
             this.deleteToolStripMenuItem1.Text = "Delete";
             // 
             // monumentsToolStripMenuItem
@@ -340,7 +343,7 @@
             this.ajouterToolStripMenuItem1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ajouterToolStripMenuItem1.Image = global::TP3.Properties.Resources.add;
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(113, 22);
             this.ajouterToolStripMenuItem1.Text = "Ajouter";
             this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajouterToolStripMenuItem1_Click);
             // 
@@ -358,7 +361,7 @@
             this.ajouterToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ajouterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ajouterToolStripMenuItem.Image")));
             this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
-            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.ajouterToolStripMenuItem.Text = "Ajouter";
             this.ajouterToolStripMenuItem.Click += new System.EventHandler(this.ajouterToolStripMenuItem_Click);
             // 
@@ -375,7 +378,7 @@
             this.rechercheToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.rechercheToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("rechercheToolStripMenuItem.Image")));
             this.rechercheToolStripMenuItem.Name = "rechercheToolStripMenuItem";
-            this.rechercheToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rechercheToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.rechercheToolStripMenuItem.Text = "Recherche";
             this.rechercheToolStripMenuItem.Click += new System.EventHandler(this.rechercheToolStripMenuItem_Click);
             // 
@@ -477,12 +480,36 @@
             this.label7.TabIndex = 30;
             this.label7.Text = "Réservation";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(787, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 24);
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label8.Location = new System.Drawing.Point(740, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 16);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "status:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(808, 429);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
@@ -512,6 +539,7 @@
             this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -562,6 +590,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label8;
     }
 }
 

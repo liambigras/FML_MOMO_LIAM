@@ -48,6 +48,7 @@
             this.Creer = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.BTN_Cancel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -197,9 +198,9 @@
             this.Creer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Creer.FlatAppearance.BorderSize = 0;
             this.Creer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Creer.Location = new System.Drawing.Point(212, 317);
+            this.Creer.Location = new System.Drawing.Point(417, 207);
             this.Creer.Name = "Creer";
-            this.Creer.Size = new System.Drawing.Size(48, 67);
+            this.Creer.Size = new System.Drawing.Size(70, 72);
             this.Creer.TabIndex = 23;
             this.Creer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Creer.UseVisualStyleBackColor = false;
@@ -213,19 +214,35 @@
             this.BTN_Cancel.FlatAppearance.BorderSize = 0;
             this.BTN_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTN_Cancel.Location = new System.Drawing.Point(105, 317);
+            this.BTN_Cancel.Location = new System.Drawing.Point(310, 207);
             this.BTN_Cancel.Name = "BTN_Cancel";
-            this.BTN_Cancel.Size = new System.Drawing.Size(48, 71);
+            this.BTN_Cancel.Size = new System.Drawing.Size(70, 76);
             this.BTN_Cancel.TabIndex = 27;
             this.BTN_Cancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BTN_Cancel.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.Location = new System.Drawing.Point(308, 42);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(179, 152);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Ajouter Monument au Circuit";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form_CreationCircuit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(328, 396);
+            this.ClientSize = new System.Drawing.Size(543, 311);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BTN_Cancel);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox1);
@@ -274,5 +291,6 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button BTN_Cancel;
+        private System.Windows.Forms.Button button1;
     }
 }

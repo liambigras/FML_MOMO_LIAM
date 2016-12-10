@@ -26,9 +26,15 @@ namespace TP3
             
         }
         
+
+        private void FirstLoad()
+        {
+            string slctLoad = "select * from CIRCUIT";
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            FirstLoad();
         }
 
        
@@ -51,11 +57,7 @@ namespace TP3
 
         }
 
-        private void BTN_EspaceClient_Click(object sender, EventArgs e)
-        {
-            EspaceClient espClient = new EspaceClient();
-            espClient.ShowDialog();
-        }
+       
         
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -125,7 +127,7 @@ namespace TP3
 
         private void rechercheToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DLGrRECHERCHE R = new DLGrRECHERCHE();
+            FormSearchMonument R = new FormSearchMonument();
             R.ShowDialog();
         }
 

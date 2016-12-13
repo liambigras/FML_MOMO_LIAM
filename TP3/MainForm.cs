@@ -105,9 +105,28 @@ namespace TP3
         {
             LBL_Monuments.Show();
             LB_Monument.Show();
-           
+            LBL_Circuits.Show();
+            LV_Circuits_MonumentsP.Show();
+            BTN_AddMonument.Show();
 
         }  
+
+        private void ShowMonumentsInformationsComponents()
+        {
+            PN_Informations.Show();
+            PB_MonumentImage.Show();
+            PN_Arrows.Show();
+            showInformation = true;
+        }
+
+        private void OnlyHideInformationsPanel()
+        {
+            PN_Informations.Hide();
+            PB_MonumentImage.Hide();
+            PN_Arrows.Hide();
+            showInformation = false;
+        }
+
         private void LoadingFormStart()
         {
             //loads the username
@@ -130,6 +149,9 @@ namespace TP3
             PN_Arrows.Hide();
             BTN_Information.Hide();
             PN_Informations.Hide();
+            LBL_Circuits.Hide();
+            LV_Circuits_MonumentsP.Hide();
+            BTN_AddMonument.Hide();
         }
         private void BTN_Supprimer_Click(object sender, EventArgs e)
         {
@@ -142,11 +164,18 @@ namespace TP3
             ShowMonumentsBtnComponents();
         }
 
+        bool showInformation = false;
         private void BTN_Information_Click(object sender, EventArgs e)
         {
-            PN_Informations.Show();
-            PB_MonumentImage.Show();
-            PN_Arrows.Show();
+            if (!showInformation)
+                ShowMonumentsInformationsComponents();
+            else
+                OnlyHideInformationsPanel();
+        }
+
+        private void BTN_Leave_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

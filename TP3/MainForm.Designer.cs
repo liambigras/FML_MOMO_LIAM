@@ -47,15 +47,11 @@
             this.modifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LB_ClientRéservéCircuit = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.BTN_Circuits = new System.Windows.Forms.Button();
             this.BTN_Monuments = new System.Windows.Forms.Button();
             this.BTN_Clients = new System.Windows.Forms.Button();
             this.BTN_Reservations = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.BTN_Leave = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.LBL_Usager = new System.Windows.Forms.Label();
@@ -77,6 +73,11 @@
             this.PN_Informations = new System.Windows.Forms.Panel();
             this.LBL_indexSelected = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.LBL_Circuits = new System.Windows.Forms.Label();
+            this.LV_Circuits_MonumentsP = new System.Windows.Forms.ListView();
+            this.cH_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cH_Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.BTN_AddMonument = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_CircuitsListe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_MonumentImage)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -102,11 +103,12 @@
             this.DGV_CircuitsListe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DGV_CircuitsListe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.DGV_CircuitsListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_CircuitsListe.Location = new System.Drawing.Point(217, 60);
+            this.DGV_CircuitsListe.Location = new System.Drawing.Point(217, 58);
             this.DGV_CircuitsListe.Name = "DGV_CircuitsListe";
             this.DGV_CircuitsListe.ReadOnly = true;
             this.DGV_CircuitsListe.Size = new System.Drawing.Size(780, 242);
             this.DGV_CircuitsListe.TabIndex = 0;
+            this.DGV_CircuitsListe.Visible = false;
             this.DGV_CircuitsListe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // PB_MonumentImage
@@ -180,12 +182,13 @@
             // 
             // LB_Monument
             // 
+            this.LB_Monument.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.LB_Monument.Font = new System.Drawing.Font("Agency FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_Monument.FormattingEnabled = true;
             this.LB_Monument.ItemHeight = 14;
             this.LB_Monument.Location = new System.Drawing.Point(231, 100);
             this.LB_Monument.Name = "LB_Monument";
-            this.LB_Monument.Size = new System.Drawing.Size(177, 228);
+            this.LB_Monument.Size = new System.Drawing.Size(177, 196);
             this.LB_Monument.TabIndex = 0;
             // 
             // BTN_Prochain
@@ -241,53 +244,13 @@
             // 
             this.LB_ClientRéservéCircuit.BackColor = System.Drawing.Color.LightSkyBlue;
             this.LB_ClientRéservéCircuit.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LB_ClientRéservéCircuit.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_ClientRéservéCircuit.FormattingEnabled = true;
+            this.LB_ClientRéservéCircuit.ItemHeight = 17;
             this.LB_ClientRéservéCircuit.Location = new System.Drawing.Point(788, 533);
             this.LB_ClientRéservéCircuit.Name = "LB_ClientRéservéCircuit";
-            this.LB_ClientRéservéCircuit.Size = new System.Drawing.Size(132, 156);
+            this.LB_ClientRéservéCircuit.Size = new System.Drawing.Size(132, 153);
             this.LB_ClientRéservéCircuit.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(785, 517);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 13);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Réservation du Circuits";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.SteelBlue;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(938, 569);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 95);
-            this.button3.TabIndex = 26;
-            this.button3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(961, 553);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 13);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "Supprimer";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(954, 667);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 13);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "Réservation";
             // 
             // BTN_Circuits
             // 
@@ -367,30 +330,31 @@
             this.BTN_Reservations.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BTN_Reservations.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // BTN_Leave
             // 
-            this.button8.BackColor = System.Drawing.Color.LightSlateGray;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Agency FB", 18F);
-            this.button8.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 688);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(217, 69);
-            this.button8.TabIndex = 37;
-            this.button8.Text = " Quitter";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = false;
+            this.BTN_Leave.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BTN_Leave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BTN_Leave.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BTN_Leave.FlatAppearance.BorderSize = 0;
+            this.BTN_Leave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_Leave.Font = new System.Drawing.Font("Agency FB", 18F);
+            this.BTN_Leave.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.BTN_Leave.Image = ((System.Drawing.Image)(resources.GetObject("BTN_Leave.Image")));
+            this.BTN_Leave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTN_Leave.Location = new System.Drawing.Point(0, 592);
+            this.BTN_Leave.Name = "BTN_Leave";
+            this.BTN_Leave.Size = new System.Drawing.Size(217, 69);
+            this.BTN_Leave.TabIndex = 37;
+            this.BTN_Leave.Text = " Quitter";
+            this.BTN_Leave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN_Leave.UseVisualStyleBackColor = false;
+            this.BTN_Leave.Click += new System.EventHandler(this.BTN_Leave_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.BTN_Leave);
             this.panel1.Controls.Add(this.BTN_Monuments);
             this.panel1.Controls.Add(this.BTN_Reservations);
             this.panel1.Controls.Add(this.BTN_Clients);
@@ -398,7 +362,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 60);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(219, 759);
+            this.panel1.Size = new System.Drawing.Size(219, 663);
             this.panel1.TabIndex = 38;
             // 
             // panel2
@@ -540,9 +504,9 @@
             this.PB_Boat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.PB_Boat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PB_Boat.BackgroundImage")));
             this.PB_Boat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PB_Boat.Location = new System.Drawing.Point(63, 58);
+            this.PB_Boat.Location = new System.Drawing.Point(225, 117);
             this.PB_Boat.Name = "PB_Boat";
-            this.PB_Boat.Size = new System.Drawing.Size(63, 57);
+            this.PB_Boat.Size = new System.Drawing.Size(207, 119);
             this.PB_Boat.TabIndex = 46;
             this.PB_Boat.TabStop = false;
             // 
@@ -552,7 +516,7 @@
             this.PB_Mountains.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PB_Mountains.Location = new System.Drawing.Point(0, 0);
             this.PB_Mountains.Name = "PB_Mountains";
-            this.PB_Mountains.Size = new System.Drawing.Size(63, 59);
+            this.PB_Mountains.Size = new System.Drawing.Size(222, 114);
             this.PB_Mountains.TabIndex = 47;
             this.PB_Mountains.TabStop = false;
             // 
@@ -561,9 +525,9 @@
             this.PB_Sign.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PB_Sign.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PB_Sign.BackgroundImage")));
             this.PB_Sign.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PB_Sign.Location = new System.Drawing.Point(63, 0);
+            this.PB_Sign.Location = new System.Drawing.Point(225, 0);
             this.PB_Sign.Name = "PB_Sign";
-            this.PB_Sign.Size = new System.Drawing.Size(63, 59);
+            this.PB_Sign.Size = new System.Drawing.Size(207, 114);
             this.PB_Sign.TabIndex = 49;
             this.PB_Sign.TabStop = false;
             // 
@@ -572,21 +536,21 @@
             this.PB_Map.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.PB_Map.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PB_Map.BackgroundImage")));
             this.PB_Map.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PB_Map.Location = new System.Drawing.Point(0, 58);
+            this.PB_Map.Location = new System.Drawing.Point(0, 117);
             this.PB_Map.Name = "PB_Map";
-            this.PB_Map.Size = new System.Drawing.Size(63, 57);
+            this.PB_Map.Size = new System.Drawing.Size(222, 119);
             this.PB_Map.TabIndex = 48;
             this.PB_Map.TabStop = false;
             // 
             // PN_Logo
             // 
             this.PN_Logo.Controls.Add(this.PB_Sign);
-            this.PN_Logo.Controls.Add(this.PB_Mountains);
             this.PN_Logo.Controls.Add(this.PB_Boat);
             this.PN_Logo.Controls.Add(this.PB_Map);
-            this.PN_Logo.Location = new System.Drawing.Point(766, 108);
+            this.PN_Logo.Controls.Add(this.PB_Mountains);
+            this.PN_Logo.Location = new System.Drawing.Point(262, 306);
             this.PN_Logo.Name = "PN_Logo";
-            this.PN_Logo.Size = new System.Drawing.Size(126, 116);
+            this.PN_Logo.Size = new System.Drawing.Size(432, 236);
             this.PN_Logo.TabIndex = 50;
             // 
             // PN_Arrows
@@ -651,33 +615,82 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "/";
             // 
+            // LBL_Circuits
+            // 
+            this.LBL_Circuits.AutoSize = true;
+            this.LBL_Circuits.Font = new System.Drawing.Font("Agency FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBL_Circuits.Location = new System.Drawing.Point(564, 63);
+            this.LBL_Circuits.Name = "LBL_Circuits";
+            this.LBL_Circuits.Size = new System.Drawing.Size(80, 34);
+            this.LBL_Circuits.TabIndex = 54;
+            this.LBL_Circuits.Text = "Circuits";
+            // 
+            // LV_Circuits_MonumentsP
+            // 
+            this.LV_Circuits_MonumentsP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LV_Circuits_MonumentsP.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.cH_Name,
+            this.cH_Price});
+            this.LV_Circuits_MonumentsP.GridLines = true;
+            this.LV_Circuits_MonumentsP.Location = new System.Drawing.Point(570, 100);
+            this.LV_Circuits_MonumentsP.Name = "LV_Circuits_MonumentsP";
+            this.LV_Circuits_MonumentsP.Size = new System.Drawing.Size(229, 200);
+            this.LV_Circuits_MonumentsP.TabIndex = 55;
+            this.LV_Circuits_MonumentsP.UseCompatibleStateImageBehavior = false;
+            // 
+            // cH_Name
+            // 
+            this.cH_Name.Text = "Nom";
+            // 
+            // cH_Price
+            // 
+            this.cH_Price.Text = "Prix";
+            // 
+            // BTN_AddMonument
+            // 
+            this.BTN_AddMonument.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BTN_AddMonument.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BTN_AddMonument.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_AddMonument.BackgroundImage")));
+            this.BTN_AddMonument.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BTN_AddMonument.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_AddMonument.FlatAppearance.BorderSize = 0;
+            this.BTN_AddMonument.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTN_AddMonument.Font = new System.Drawing.Font("Agency FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_AddMonument.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTN_AddMonument.Location = new System.Drawing.Point(414, 259);
+            this.BTN_AddMonument.Name = "BTN_AddMonument";
+            this.BTN_AddMonument.Size = new System.Drawing.Size(39, 37);
+            this.BTN_AddMonument.TabIndex = 56;
+            this.BTN_AddMonument.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BTN_AddMonument.UseVisualStyleBackColor = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(997, 819);
+            this.ClientSize = new System.Drawing.Size(997, 723);
             this.Controls.Add(this.PN_Informations);
-            this.Controls.Add(this.BTN_Information);
-            this.Controls.Add(this.PN_Logo);
-            this.Controls.Add(this.LB_Advertisement);
-            this.Controls.Add(this.BTN_Recherche);
+            this.Controls.Add(this.BTN_AddMonument);
+            this.Controls.Add(this.LV_Circuits_MonumentsP);
+            this.Controls.Add(this.LBL_Circuits);
             this.Controls.Add(this.PN_DeleteCheatLabel);
-            this.Controls.Add(this.BTN_Ajouter);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.LBL_Monuments);
-            this.Controls.Add(this.DGV_CircuitsListe);
             this.Controls.Add(this.LB_Monument);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.BTN_Recherche);
+            this.Controls.Add(this.LB_Advertisement);
+            this.Controls.Add(this.PN_Logo);
+            this.Controls.Add(this.DGV_CircuitsListe);
+            this.Controls.Add(this.BTN_Information);
+            this.Controls.Add(this.BTN_Ajouter);
             this.Controls.Add(this.LB_ClientRéservéCircuit);
+            this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulaire de Gestions";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_CircuitsListe)).EndInit();
@@ -714,19 +727,15 @@
         private System.Windows.Forms.ToolStripMenuItem modifyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ListBox LB_ClientRéservéCircuit;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button BTN_Prochain;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label LBL_Monuments;
         private System.Windows.Forms.ListBox LB_Monument;
         private System.Windows.Forms.Button BTN_Circuits;
         private System.Windows.Forms.Button BTN_Monuments;
         private System.Windows.Forms.Button BTN_Clients;
         private System.Windows.Forms.Button BTN_Reservations;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button BTN_Leave;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label11;
@@ -748,6 +757,11 @@
         private System.Windows.Forms.Panel PN_Informations;
         private System.Windows.Forms.Label LBL_indexSelected;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LBL_Circuits;
+        private System.Windows.Forms.ListView LV_Circuits_MonumentsP;
+        private System.Windows.Forms.ColumnHeader cH_Name;
+        private System.Windows.Forms.ColumnHeader cH_Price;
+        private System.Windows.Forms.Button BTN_AddMonument;
     }
 }
 

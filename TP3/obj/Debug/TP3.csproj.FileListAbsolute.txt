@@ -176,7 +176,6 @@ C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\bin\Debug\TP3.exe
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\bin\Debug\TP3.pdb
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\bin\Debug\Oracle.ManagedDataAccess.dll
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\bin\Debug\Xceed.Wpf.Toolkit.dll
-C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.csprojResolveAssemblyReference.cache
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.Connexion.resources
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.MainForm.resources
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.ModifierCircuit.resources

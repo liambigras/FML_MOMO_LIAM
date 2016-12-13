@@ -65,6 +65,7 @@
     <Compile Include="Connexion.Designer.cs">
       <DependentUpon>Connexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data.cs" />
     <Compile Include="DLGrRECHERCHE.cs">
       <SubType>Form</SubType>
     </Compile>

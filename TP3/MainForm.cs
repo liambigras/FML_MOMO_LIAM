@@ -1,45 +1,34 @@
-﻿using System;
-using System.Data;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Windows.Forms;
-using Oracle.ManagedDataAccess.Client;
 
 
 namespace TP3
 {
     public partial class MainForm : Form
     {
-        OracleCommandBuilder bui;
-        OracleConnection con;
-            OracleCommand cmAjout_;
-            OracleDataAdapter D = new OracleDataAdapter(); //lie entre le data set et les donnée ervir d'un objet DataAdapter pour remplir de données un DataSet puis répercuter les modifications réalisées sur une source de données. Il est possible de définir les actions à réaliser par le DataAdapter en utilisant l'une des quatre propriétés suivantes. Chaque propriété exécutera soit un ordre SQL soit une procédure stockée.
-            DataSet DA = new DataSet();
-            public donnes Circuit { get; set; }
-         private int selected_Circuit = -1;
-        public Form_CreationCircuit C;
-        string str;
-        int i;
+       
         public MainForm()
         {
             
             InitializeComponent();
-           
-            
+
         }
         
 
-        private void FirstLoad()
-        {
-            string slctLoad = "select * from CIRCUIT";
-        }
-
+      
         private void MainForm_Load(object sender, EventArgs e)
         {
-            FirstLoad();
+            LoadingFormStart();
         }
 
        
 
-          
+         private void DisplayUsername()
+        {
+            LBL_Usager.Text = Data.UsagerID;
+            LBL_Usager.Show();
+        }
            
         
 
@@ -51,14 +40,10 @@ namespace TP3
 
         }
 
-        private void connectToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-
-        }
+     
 
        
-        
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -72,75 +57,96 @@ namespace TP3
             
             
         }
-        private void BTN_AjouterCircuit_Click(object sender, EventArgs e)
-        {
-           
+       
             
-            
-        }
-
-            
-        private void BTN_SupprimerCircuit_Click(object sender, EventArgs e)
-        {
-            /*foreach (DataGridViewRow row in dataGridView1.SelectedRows)
-            {
-                OracleCommand del = new OracleCommand("Delete from Disques where Nodisque=" + row.Cells[0].Value, con);
-                dataGridView1.Rows.RemoveAt(row.Index);
-                del.ExecuteNonQuery();
-            }*/
-        }
+    
 
         private void LB_Monuments_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-         
-            Form_CreationCircuit op = new Form_CreationCircuit();
-            op.ShowDialog();
-            try
-            {
-                string sql = "insert into disques values('" + donnes.VilleD + ",'" +
-  donnes.VilleA + "'," + donnes.Prix + "," + donnes.NomCircuit + "," + donnes.Duree + ")";
-                OracleCommand add = new OracleCommand(sql, donnes.COnn);
-                add.ExecuteNonQuery();
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show(error.ToString());
-            }
+       
 
+        
+       
+
+       
+
+        private void BTN_Circuits_Click(object sender, EventArgs e)
+        {
+            HideAllComponents_between_Btns();
+            ShowCircuitsBtnComponents();
         }
 
-        private void modifyToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void TakeOffMainMenu()
         {
-            ModifierCircuit F = new ModifierCircuit();
-            F.ShowDialog();
+            if(PN_Logo.Visible)
+            {
+                PN_Logo.Hide();
+            }
+            if(LB_Advertisement.Visible)
+            {
+                LB_Advertisement.Hide();
+            }
         }
+        
+        //Instancie les composants pour le clique sur circuit
+        private void ShowCircuitsBtnComponents()
+        {
+            DGV_CircuitsListe.Show();
+            BTN_Ajouter.Show();
+            PN_DeleteCheatLabel.Show();
+            BTN_Recherche.Show();
+            BTN_Information.Show();
+            TakeOffMainMenu();
+        }  
+        private void ShowMonumentsBtnComponents()
+        {
+            LBL_Monuments.Show();
+            LB_Monument.Show();
+           
 
-        private void monumentsToolStripMenuItem_Click(object sender, EventArgs e)
+        }  
+        private void LoadingFormStart()
+        {
+            //loads the username
+            DisplayUsername();
+            PN_Logo.Show();
+            LB_Advertisement.Show();
+
+            HideAllComponents_between_Btns();
+        }
+        
+        private void HideAllComponents_between_Btns()
+        {
+            DGV_CircuitsListe.Hide();
+            BTN_Ajouter.Hide();
+            PN_DeleteCheatLabel.Hide();
+            BTN_Recherche.Hide();
+            LBL_Monuments.Hide();
+            LB_Monument.Hide();
+            PB_MonumentImage.Hide();
+            PN_Arrows.Hide();
+            BTN_Information.Hide();
+            PN_Informations.Hide();
+        }
+        private void BTN_Supprimer_Click(object sender, EventArgs e)
         {
             
         }
 
-        private void rechercheToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BTN_Monuments_Click(object sender, EventArgs e)
         {
-            FormSearchMonument R = new FormSearchMonument();
-            R.ShowDialog();
+            HideAllComponents_between_Btns();
+            ShowMonumentsBtnComponents();
         }
 
-        private void ajouterToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BTN_Information_Click(object sender, EventArgs e)
         {
-            ReservationClient R = new ReservationClient();
-            R.ShowDialog();
-        }
-
-        private void ajouterToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Monument M = new Monument();
-            M.ShowDialog();
+            PN_Informations.Show();
+            PB_MonumentImage.Show();
+            PN_Arrows.Show();
         }
     }
 }

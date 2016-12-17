@@ -185,3 +185,4 @@ C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.Properties.Resour
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.ReservationClient.resources
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.csproj.GenerateResource.Cache
 C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.FormSearchMonument.resources
+C:\Users\Liam\Documents\GitHub\FML_MOMO_LIAM\TP3\obj\Debug\TP3.csprojResolveAssemblyReference.cache
